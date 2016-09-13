@@ -1,5 +1,5 @@
 /* ========================================================================
- * bootstrap-switch - v3.3.2
+ * bootstrap-switch - v3.3.4
  * http://www.bootstrap-switch.org
  * ========================================================================
  * Copyright 2012-2013 Mattia Larentis
@@ -438,8 +438,8 @@
             }
           };
         })(this));
-        this._handleWidth = this.$on.outerWidth();
-        this._labelWidth = this.$label.outerWidth();
+        this._handleWidth = Math.round(this.$on.outerWidth());
+        this._labelWidth = Math.round(this.$label.outerWidth());
         this.$container.width((this._handleWidth * 2) + this._labelWidth);
         return this.$wrapper.width(this._handleWidth + this._labelWidth);
       };
